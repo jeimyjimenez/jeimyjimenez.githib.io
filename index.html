@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link href="./style.css" type="text/css" rel="stylesheet">  
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <meta name="viewport" content="width=device-width, user-scalable=no">
+        <!--<a href="#top">Top</a></li>-->
+        <title>
+            Jeimy Jimenez Loayza's Portafolio
+        </title>
+    </head> 
+    <body>
+        <header>
+            <nav class="topnav" id="portfolioTopnav">
+                <a href="#About">About</a> 
+                <a href="#Skills">Skills</a>
+                <a href="#Acomplishments">Acomplishments</a> 
+                <a href="#Contact">Contact</a>    
+                <a href="javascript:void(0);" class="icon" onclick="openMenu ()"><i class="fa fa-bars"></i></a>
+            </nav>
+            <h1><strong>Jeimy Jimenez Loayza</strong></h1>
+        </header>
+        
+        <a href="https://www.linkedin.com/in/jeimy-jimenez-a21908161/" target="_blank">
+            <figure id="image" >
+            <img class="image"src= "DSC_4962.jpg" width= "220" height="310" alt="A person sitting in a chair"/>
+            </figure>
+        </a>   
+        <main>           
+            <!--About Section -->
+            <div id=“aboutsection” class="aboutsection">
+                <h2 id="About" class="heading uppercase"> <strong>About</strong></h2>
+                <p><br>
+                    I am a <strong>microbiologist</strong> and <strong>PhD candidate</strong> in <em>Immunology</em> and <em>Microbiology</em> at QUT as part the School of Biomedical Science, Faculty of Health program. 
+                    I am am passionate about research and understanding the relationship of how the gut microbiome influences the human body.
+                </p>
+            </div>
+                        
+        <!--Skill Section -->
+            <div>
+                <h3 id="Skills"> <strong>Skills</strong></h3>
+                <h4> Research Skills</h4>
+                <ul class="list">
+                    <li> Report writing</li>  
+                    <li>Data collection and storage</li>
+                    <li> Time management</li>
+                    <li>Analysis of data and research outputs from different sources</li>
+                </ul>
+                <h4>Interpersonal Skills</h4>
+                <ul class="list">
+                    <li>Teamwork</li>
+                    <li>Responsability and commitment</li>
+                    <li>Leadership</li>
+                    <li> Reliable</li>
+                    <li>Problem solving</li>
+                    <li> Integrity</li>
+                </ul>
+                <h4> Technical Skills</h4>
+                <ul class="list">
+                    <li> Molecular biology and Microbiology laboratory Proficiency</li>
+                    <li> Project management</li>   
+                    <li> Software Proficiency</li>
+                </ul>
+            <!--Accomplishment Section -->    
+            </div>
+            <div id="Accomplishments">
+                <h2 id="Acomplishments">Accomplishment</h2>
+                <table id="table"  class="table">
+                    <tr id=" th" class="th"> 
+                        <th class="th" scope="col">Year</th> 
+                        <th class="th"scope="col"> Studies </th>
+                        <th class="th" scope="col">Awards </th>
+                    </tr>
+                    <tr id="td" class="td">                        
+                        <td class="td"> 2021- ongoing </td>
+                        <td class="td" style="text-align:center"> Doctor of Philosophy (IF49) </td>
+                        <td class="td" style="text-align:center"> QUT Postgraduate Research Award</td>
+                    </tr> 
+        
+        <!--  
+            </tr> 
+            <tr> 
+                <td> 2018 </td>
+                <td style="text-align:center"> Bachelor of Biomedical Sciences Honours Class I </td>
+                <td style="text-align:center"> Dean’s Commendation for Academic Excellence Semester 2 2018 | Faculty of Science |The University of Queensland</td>
+            </tr>  
+            <tr>
+                <td style="text-align:center"> </td>
+                <td style="text-align:center"> The University of Queensland, Saint Lucia, Queensland (Australia)</td>
+            -->
+            </table>    
+            <h3>Coding Examples</h3>
+        <a href="quiz.html" target="_blank">Take the Portfolio Quiz!</a>
+            </div>
+        <!--Contact Section -->   
+            <div id="contactsection">
+                <h2 id="Contact" class="contactform"> Contact</h2>
+                <a href="https://www.linkedin.com/in/jeimy-jimenez-a21908161/" target="_blank"> Find me in LinkedIn</a>
+                <form>
+                    <label for="name"> * Name:</label>
+                    <br>
+                    <input type="text" id="name" name="name" required>
+                    <br>
+                    <br>
+                    <label for="e-mail"> *e-mail </label>
+                    <input type="text" id="e-mail" name="e-mail" pattern= "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <br> 
+                    <br> 
+                    <label for="mobile"> Mobile (optional) </label>
+                    <br>
+                    <input id="mobile" name="mobile" type="tel"  placeholder="8888888888" pattern="[0-9]{12}" maxlength="12">
+                    <br> 
+                    <br>
+                    <label for ="textarea">*Leave your message below:</label>
+                    <br>
+                    <textarea id="message" name="message" rows="5" cols="30" required> </textarea> 
+                    <br>
+                    <br>
+                    <input  type="submit" value = "Send">
+                </form>    
+            </div>
+        </main>     
+    <script src="./nav.js"> </script>
+    </body>
+</html>
